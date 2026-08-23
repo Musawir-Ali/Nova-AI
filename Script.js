@@ -399,3 +399,11 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(pricingSection);
+
+
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navLinks = document.querySelector('.nav-link');
+
+hamburgerBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
