@@ -400,10 +400,34 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(pricingSection);
 
+// ========================================
+// MOBILE NAVIGATION
+// ========================================
 
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const navLinks = document.querySelector('.nav-link');
+const menuToggle = document.getElementById("menuToggle");
+const navbar = document.getElementById("navbar");
 
-hamburgerBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-});
+if (menuToggle && navbar) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navbar.classList.toggle("menu-open");
+
+    });
+
+
+    // Close menu when a navigation link is clicked
+
+    const navItems = navbar.querySelectorAll(".nav-link li");
+
+    navItems.forEach(function (item) {
+
+        item.addEventListener("click", function () {
+
+            navbar.classList.remove("menu-open");
+
+        });
+
+    });
+
+}
