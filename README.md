@@ -6,7 +6,7 @@ A modern, fully responsive AI SaaS landing page built with HTML, CSS, and JavaSc
 [View Live](https://musawir-ali.github.io/Nova-AI/)
 
 ## Preview
-![NovaAI Preview](image/preview.png)
+![NovaAI Preview](image/image.png)
 
 ## Features
 - Fully responsive design (mobile, tablet, desktop)
